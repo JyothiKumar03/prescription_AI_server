@@ -45,7 +45,7 @@ const uploadFile = async (req, res) => {
 
       console.log("Extracted Text:", data.text);
       // const enhancedText = await enhanceWithGemini(data.text);
-      console.log("Enhanced Text: ", enhancedText);
+      // console.log("Enhanced Text: ", enhancedText);
       return res.status(200).json({ message: data.text });
     } catch (tesseractError) {
       console.error("Tesseract Error:", tesseractError);
